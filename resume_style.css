@@ -1,0 +1,439 @@
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: lightgray;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+.container{
+    position:relative;
+    width:100%;
+    max-width:1000px;
+    min-height:1000px;
+    margin:50px;
+    background: #888585;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    grid-template-columns: 1fr;
+}
+
+.container .left{
+   position:relative;
+   background: #222121;
+   padding:40px;
+}
+
+.profileText{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+   
+}
+
+.profileText .imgbox{
+    position: relative;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.profileText .imgbox img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.profileText h2{
+    color:white;
+    font-size:1.5em;
+    margin-top:20px;
+    text-transform: uppercase;
+    text-align:center;
+    font-weight:600;
+    line-height:1.5em;
+}
+
+.profileText h2 span{
+    font-size:0.8em;
+    font-weight:300;
+}
+
+.contactInfo{
+    padding-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.title{
+    color: white;;
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom: 20px;
+}
+
+
+.contactInfo ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.contactInfo ul li{
+    display: flex;
+    align-items: center;
+    width: 48%; 
+    margin-bottom: 10px;
+}
+
+.contactInfo ul li span{
+    color:white;
+    font-weight:200;
+
+}
+
+.contactInfo ul li a{
+    color: white;
+}
+
+.contactInfo ul li .icon{
+    font-size: 18px;
+    color: rgb(0, 102, 255);
+    margin-right: 10px; 
+}
+
+.contactInfo_education li{
+    margin-bottom: 15px;
+
+}
+
+.contactInfo_education h5{
+    color:rgb(68, 187, 223);
+    font-weight:600;
+}
+
+.contactInfo_education h4{
+    color:white;
+    font-weight:500;
+}
+
+
+.contactInfo_Languages {
+    margin-top: 20px;
+}
+
+
+.Language_item {
+    margin-bottom: 10px;
+}
+
+
+.LanguageName {
+    font-weight: bold;
+    color: white;
+}
+
+/* Skill progress bar container */
+.progress-bar-container {
+    background-color: #b88e8e;
+    border-radius: 5px;
+    height: 15px;
+    width: 100%;
+}
+
+/* Skill progress bar */
+.progress-bar {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #083655;
+}
+
+.container .right{
+    position:relative;
+    background: #b1a8a8;
+    padding:40px;
+    padding-top: 20px; 
+ }
+
+ 
+
+ .top-nav {
+    background-color: #421919;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-nav li {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.top-nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-nav a:hover {
+    background-color: #555;
+}
+
+.about-section h1{
+   color: rgb(9, 91, 129);
+   text-align: center;
+   font-weight: 800;
+   margin-top: 40px;
+}
+ 
+
+.about-section p{
+    color: rgb(12, 11, 11);
+    font-weight:500;
+    line-height: 1.5;
+}
+
+.skills-section h1{
+    color: rgb(7, 124, 32);
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.skills-container {
+    margin-top: 20px;
+}
+
+
+.skill-item {
+    margin-bottom: 10px;
+}
+
+
+.skill-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.progress-bar-container {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    height: 15px;
+    width: 100%;
+}
+
+/* Skill progress bar */
+.progress-bar {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #2b2edf;
+}
+ 
+
+.achievement-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    padding: 20px;
+}
+
+.achievement-section h1{
+    text-align: center;
+    color:#e93a92;
+    font-weight: 800;
+}
+
+.achievement-box {
+    max-width: 400px; /* Set a maximum width for the boxes */
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #745757;
+    color: rgb(14, 13, 13);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+          
+}
+
+.achievement-box li{
+    display: inline-block;
+}
+
+/* Button styling for Academic and Curriculum buttons (optional) */
+.achievement-box button {
+    margin-bottom: 5px;
+    font-size:20px;
+    background-color:rgb(61, 61, 15);
+    border-color:rgb(61, 61, 15);
+    border-radius: 20px;
+    padding:15px;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.achievement-content{
+    font-size:20px;
+    font-weight:800;
+}
+.achievement-box ul{
+    line-height:1.6;
+}
+.achievement-box p{
+    font-weight: 300;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align the text within the section */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.projects-box {
+    width: 100%;
+    max-width: 800px; /* Set a maximum width for the projects box */
+    margin: 10px auto; /* Center-align the box horizontally */
+    padding: 20px;
+    background-color: #b1a8a8;
+    color: rgb(14, 13, 13);
+    border-radius: 10px;
+    text-align: center; /* Center-align the content within the box */
+}
+
+.project-section h1{
+    color:#4f0fa3;
+    font-weight:800;
+}
+.projects-box p {
+    text-align: left;
+}
+
+.projects-box h3 {
+    text-align: left;
+}
+
+.footer-box {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .container{
+        grid-template-columns: 1fr; /* Set the container to a single column for smaller screens */
+    }
+
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 150px;
+        background-color: #421919;
+    }
+
+    .menu-icon {
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #421919;
+        z-index: 1;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /* Show the menu when the menu icon is clicked */
+    .menu-icon.clicked ~ .menu {
+        display: block;
+    }
+
+    .left, .right {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .profileText .imgbox {
+        width: 300px; /* Adjust profile image size for smaller screens */
+        height: 300px;
+    }
+
+    .profileText h2 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    .contactInfo, .contactInfo_education, .contactInfo_Languages {
+        margin-bottom: 20px; /* Adjust margins for smaller screens */
+    }
+
+    .contactInfo_Languages .Language_item, .skill-item {
+        margin-bottom: 5px; /* Adjust margins for smaller screens */
+    }
+
+    .progress-bar-container {
+        height: 10px; /* Adjust progress bar height for smaller screens */
+    }
+
+    .achievement-box {
+        width: 100%; /* Set the achievement box width to fill the container on smaller screens */
+        margin: 10px 0; /* Adjust margins for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
