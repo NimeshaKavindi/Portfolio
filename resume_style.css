@@ -20,10 +20,9 @@ body{
 .container{
     position:relative;
     width:100%;
-    max-width:1000px;
-    min-height:1000px;
+    height:100%;
     margin:50px;
-    background: #888585;
+    background: #2c2828;
     display:grid;
     grid-template-columns:1fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
@@ -81,6 +80,7 @@ body{
 .contactInfo{
     padding-top: 40px;
     margin-bottom: 40px;
+    padding-left: 30px;
 
 }
 
@@ -107,6 +107,8 @@ body{
     align-items: center;
     width: 48%; 
     margin-bottom: 10px;
+    padding-left: 100px;
+    size: 600;
 }
 
 .contactInfo ul li span{
@@ -143,11 +145,14 @@ body{
 
 .contactInfo_Languages {
     margin-top: 20px;
+    padding-left: 30px;
 }
 
 
 .Language_item {
     margin-bottom: 10px;
+    padding-right: 300px;
+    padding-left: 40px;
 }
 
 
@@ -179,6 +184,9 @@ body{
  }
 
  
+.up{
+    padding-top: 10px;
+}
 
  .top-nav {
     background-color: #421919;
@@ -200,7 +208,7 @@ body{
 
 .top-nav a {
     display: block;
-    padding: 10px 20px;
+    padding: 20px 30px;
     color: #fff;
     text-decoration: none;
 }
