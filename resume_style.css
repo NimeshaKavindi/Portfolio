@@ -337,25 +337,42 @@ body{
 
 .projects-box {
     width: 100%;
-    max-width: 800px; /* Set a maximum width for the projects box */
-    margin: 10px auto; /* Center-align the box horizontally */
+    max-width: 800px; 
+    margin: 10px auto; 
     padding: 20px;
     background-color: #b1a8a8;
     color: rgb(14, 13, 13);
     border-radius: 10px;
-    text-align: center; /* Center-align the content within the box */
+    text-align: center; 
 }
 
+.projects-box img{
+    width:300px;
+    height: 300px;
+}
 .project-section h1{
     color:#4f0fa3;
     font-weight:800;
 }
+
+.projects-box button{
+    padding: 25px 100px; 
+    background-color: black;
+    border-radius: 30px;
+}
+
+.projects-box button a{
+    color: white;
+    font-size: 20px;
+}
 .projects-box p {
     text-align: left;
+    font-size:medium;
+    font-weight: 500;
 }
 
 .projects-box h3 {
-    text-align: left;
+    text-align: center;
 }
 
 .footer-box {
